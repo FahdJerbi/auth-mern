@@ -9,5 +9,8 @@ jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
+      - name: create a Folder
+        run: mkdir new_folder
+
       - name: list folders
         run: ls -l
