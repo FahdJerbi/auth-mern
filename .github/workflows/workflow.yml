@@ -1,0 +1,13 @@
+name: test_workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list folders
+        run: ls -l
